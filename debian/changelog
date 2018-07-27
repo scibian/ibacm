@@ -1,0 +1,69 @@
+ibacm (1.2.1-3ifs+deb8) jessie; urgency=medium
+
+  * Merge ibacm-dev into ibacm.
+  * Revised d/copyright.
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Fri, 27 Jul 2018 13:52:39 -0500
+
+ibacm (1.2.1-2ifs+deb8) jessie; urgency=medium
+
+  * Correct init script's Required-Start and Required-Stop.
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Tue, 29 May 2018 14:59:05 -0500
+
+ibacm (1.2.1-1ifs) jessie; urgency=medium
+
+  * Import ibacm 1.2.1 from upstream.
+  * Install shared libs to multiarch directory.
+  * Use hardening flags.
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Tue, 12 Dec 2017 17:19:46 -0600
+
+ibacm (1.1.0-3-3ifs) jessie; urgency=medium
+
+  * Use git packaging and pristine-tar.
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Tue, 17 Oct 2017 16:55:12 -0500
+
+ibacm (1.1.0-3-2ifs) jessie; urgency=medium
+
+  * Use dh_systemd instead of direct calls to systemctl in maintainer scripts.
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Thu, 14 Sep 2017 08:00:21 -0500
+
+ibacm (1.1.0-3-1ifs) jessie; urgency=medium
+
+  * Converted to quilt and corrected version number.
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Fri, 02 Jun 2017 21:52:11 -0500
+
+ibacm (1.1.0.3.1) jessie; urgency=medium
+
+  * Converted init script to systemd ibacm.service.
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Wed, 01 Feb 2017 13:49:35 -0600
+
+ibacm (1.1.0.3) jessie; urgency=medium
+
+  * Imported ibacm 1.1.0-3 from IFS 10.3.0.1.5 upstream
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Fri, 06 Jan 2017 18:23:35 -0600
+
+ibacm (1.0.8.129) jessie; urgency=medium
+
+  * Corrected distribution number.
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Tue, 27 Dec 2016 11:01:35 -0600
+
+ibacm (1.0.8.29) jessie; urgency=medium
+
+  * Include distribution in the version.
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Fri, 30 Sep 2016 18:23:35 -0500
+
+ibacm (1.0.8) jessie; urgency=medium
+
+  * Initial release.
+  * Import ibacm-1.0.8-129 from OPA 10.1.0.0.145. Inconsequential changes.
+
+ -- Brian T. Smith <bsmith@systemfabricworks.com>  Fri, 10 Jun 2016 17:33:35 -0500

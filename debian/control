@@ -1,0 +1,47 @@
+Source: ibacm
+Maintainer: Brian T. Smith <bsmith@systemfabricworks.com>
+Section: net
+Priority: extra
+Standards-Version: 3.9.6
+Homepage: https://www.openfabrics.org/downloads/rdmacm/
+Build-Depends: debhelper (>= 9),
+               dh-autoreconf,
+               dh-systemd,
+               libibumad-dev,
+               libibverbs-dev,
+               libtool,
+               quilt,
+
+Package: ibacm
+Architecture: linux-any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Replaces: ibacm-dev
+Conflicts: ibacm-dev
+Description: InfiniBand Communication Manager Assistant
+ The ibacm daemon helps reduce the load of managing path record lookups on
+ large InfiniBand fabrics by providing a user space implementation of what
+ is functionally similar to an ARP cache.  The use of ibacm, when properly
+ configured, can reduce the SA packet load of a large IB cluster from O(n^2)
+ to O(n).  The ibacm daemon is started and normally runs in the background,
+ user applications need not know about this daemon as long as their app
+ uses librdmacm to handle connection bring up/tear down.  The librdmacm
+ library knows how to talk directly to the ibacm daemon to retrieve data.
+
+Package: ibacm-dbg
+Architecture: linux-any
+Section: debug
+Depends: ibacm(=${binary:Version}),
+         ${misc:Depends},
+Description: Debug support for InfiniBand Communication Manager Assistant
+ The ibacm daemon helps reduce the load of managing path record lookups on
+ large InfiniBand fabrics by providing a user space implementation of what
+ is functionally similar to an ARP cache.  The use of ibacm, when properly
+ configured, can reduce the SA packet load of a large IB cluster from O(n^2)
+ to O(n).  The ibacm daemon is started and normally runs in the background,
+ user applications need not know about this daemon as long as their app
+ uses librdmacm to handle connection bring up/tear down.  The librdmacm
+ library knows how to talk directly to the ibacm daemon to retrieve data.
+ .
+ This package provides debugging symbols.
+

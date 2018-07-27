@@ -1,0 +1,4 @@
+version=3
+# ignore release candidates
+opts="uversionmangle=s/(.*)rc/0.ignore-$1rc/" \
+    https://www.openfabrics.org/downloads/rdmacm/ibacm-(.+)\.tar\.gz

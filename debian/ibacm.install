@@ -1,0 +1,8 @@
+/etc/*
+/usr/bin/ib_acme
+/usr/lib/*/ibacm/lib*.*
+/usr/sbin/ibacm
+/usr/share/man/man1/*
+/usr/share/man/man7/*
+/usr/include/infiniband/acm.h
+/usr/include/infiniband/acm_prov.h
