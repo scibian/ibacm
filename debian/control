@@ -1,5 +1,5 @@
 Source: ibacm
-Maintainer: Brian T. Smith <bsmith@systemfabricworks.com>
+Maintainer: Scibian Project <packaging@scibian.org>
 Section: net
 Priority: extra
 Standards-Version: 3.9.6
@@ -11,6 +11,8 @@ Build-Depends: debhelper (>= 9),
                libibverbs-dev,
                libtool,
                quilt,
+Vcs-Git: https://github.com/scibian/ibacm.git
+Vcs-Browser: https://github.com/scibian/ibacm
 
 Package: ibacm
 Architecture: linux-any
